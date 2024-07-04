@@ -8,6 +8,7 @@ const cardStyle = {
   alignItems: 'center',
   borderRadius: "0",
   boxShadow: "none",
+  marginBottom: {lg: "0px", md: "0px", sm: "12px", xs: "8px"}
 };
 
 const contentStyle = {
@@ -59,7 +60,7 @@ const BlogCard = ({ date, title, link }) => {
       <CardContent sx={contentStyle}>
         <Box sx={dateContainerStyle}>
           <CalendarTodayIcon sx={dateIconStyle} />
-          <p {...titleStyle}>
+          <p {...titleStyle} className="lato-light font-size-sm font-size-sm-res">
             {date}
           </p>
         </Box>

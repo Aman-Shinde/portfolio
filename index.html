@@ -166,6 +166,32 @@
       transform: translatex(calc(-100px * 7));
     }
   }
+
+  @keyframes loader {
+    0% {
+      background-size: 20% 50%, 20% 50%, 20% 50%
+    }
+
+    20% {
+      background-size: 20% 20%, 20% 50%, 20% 50%
+    }
+
+    40% {
+      background-size: 20% 100%, 20% 20%, 20% 50%
+    }
+
+    60% {
+      background-size: 20% 50%, 20% 100%, 20% 20%
+    }
+
+    80% {
+      background-size: 20% 50%, 20% 50%, 20% 100%
+    }
+
+    100% {
+      background-size: 20% 50%, 20% 50%, 20% 50%
+    }
+  }
 </style>
 
 <body>

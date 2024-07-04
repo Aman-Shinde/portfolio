@@ -95,7 +95,7 @@ function Experiance() {
     }
 
     return (
-        <Box id="work" sx={{ mb: { lg: "0px", md: "0px", sm: "48px", xs: "48px" } }}>
+        <Box id="work" sx={{ mb: { lg: "48px", md: "48px", sm: "48px", xs: "48px" } }}>
 
             <Box sx={{ marginBottom: "64px" }}>
                 <Box sx={{ ...sectionBorderStyle }}>

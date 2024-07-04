@@ -4,7 +4,8 @@ import AboutCard from "../components/AboutCard"
 
 // Styles
 const containerStyle = {
-  my: { lg: "0px", md: "0px", sm: "48px", xs: "48px" },
+  marginTop: {lg: "0px", md: "0px", sm: "48px", xs: "48px"},
+  marginBottom: {lg: "48px", md: "48px", sm: "48px", xs: "48px"}
 };
 
 const sectionTitleStyle = {

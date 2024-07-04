@@ -43,7 +43,7 @@ import {
 } from '@mui/icons-material';
 
 const containerStyle = {
-    mb: { lg: '0px', md: '0px', sm: '48px', xs: '48px' }
+    mb: { lg: '48px', md: '48px', sm: '48px', xs: '48px' }
 };
 
 const sectionTitleStyle = {
