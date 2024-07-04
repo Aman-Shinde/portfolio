@@ -1,10 +1,14 @@
 import React from 'react';
 import { Box, Link } from '@mui/material';
 
+import PersonIcon from '@mui/icons-material/Person';
+import ArticleIcon from '@mui/icons-material/Article';
+import WorkIcon from '@mui/icons-material/Work';
+import BookIcon from '@mui/icons-material/Book';
+
 const frameStyles = {
   frameContainer: {
     position: "fixed",
-    zIndex: "1",
     left: 0,
     top: 0,
     width: "100%",
@@ -29,7 +33,8 @@ const frameStyles = {
     left: 0,
     width: "100%",
     height: "1px",
-    backgroundColor: 'black'
+    backgroundColor: 'black',
+    display: {lg:'block', md: 'block', sm: 'none', xs: 'none'}
   },
   topLine: {
     top: { lg: "50px", md: "50px", sm: "30px", xs: "30px" }
@@ -79,6 +84,14 @@ const frameStyles = {
     flexDirection: "row",
     justifyContent: "space-evenly"
   },
+  horizontalLinkContainer: {
+    display: { lg: "flex", md: "flex", sm: "none", xs: "none" },
+    position: "absolute",
+    height: "50px",
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    alignItems: "center"
+  },
   leftVerticalLinkContainer: {
     width: "100vh",
     left: "4px",
@@ -93,14 +106,30 @@ const frameStyles = {
   },
   link: {
     textDecoration: "none",
-    color: "black"
+    color: "black",
+  },
+  desktopLink: {
+    textDecoration: "none",
+    color: "black",
+    padding: "0px 4px",
+    borderLeft: "1px solid black",
+    borderRight: "1px solid black",
+    '&:hover' : {
+      color: "white",
+      backgroundColor: "black"
+    }
   }
 };
 
 function Frame() {
   return (
     <Box sx={frameStyles.frameContainer}>
-      <Box sx={{ ...frameStyles.topBottomBar, ...frameStyles.topBar }}></Box>
+      <Box sx={{ ...frameStyles.topBottomBar, ...frameStyles.topBar, ...frameStyles.horizontalLinkContainer }}>
+        <Link className="lato-regular font-size-md" href="#about" underline="none" sx={frameStyles.desktopLink}>  About  </Link>
+        <Link className="lato-regular font-size-md" href="#resume" underline="none" sx={frameStyles.desktopLink}>  Resume  </Link>
+        <Link className="lato-regular font-size-md" href="#work" underline="none" sx={frameStyles.desktopLink}>  Experience  </Link>
+        <Link className="lato-regular font-size-md" href="#blog" underline="none" sx={frameStyles.desktopLink}>  Blogs  </Link>
+      </Box>
       <Box sx={{ ...frameStyles.topBottomBar, ...frameStyles.bottomBar }}></Box>
       <Box sx={{ ...frameStyles.topBottomLine, ...frameStyles.topLine }}></Box>
       <Box sx={{ ...frameStyles.topBottomLine, ...frameStyles.bottomLine }}></Box>
