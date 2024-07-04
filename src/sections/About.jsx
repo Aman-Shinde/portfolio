@@ -1,8 +1,7 @@
 import React from 'react';
 import { Box, Stack } from '@mui/material';
-import AboutCard from "../components/AboutCard"
+import AboutCard from '../components/AboutCard';
 
-// Styles
 const containerStyle = {
   marginTop: {lg: "0px", md: "0px", sm: "48px", xs: "48px"},
   marginBottom: {lg: "48px", md: "48px", sm: "48px", xs: "48px"}
@@ -26,24 +25,6 @@ const cardContainerStyle = {
   flexWrap: "wrap",
   alignItems: "stretch",
   justifyContent: "space-between",
-};
-
-const cardStyle = {
-  border: '1px solid black',
-  width: "40%",
-  margin: "20px auto",
-};
-
-const cardContentStyle = {
-  margin: "12px auto",
-  width: "90%",
-  padding: "4px",
-};
-
-const stackContainerStyle = {
-  flexDirection: "column",
-  justifyContent: "center",
-  textAlign: 'center',
 };
 
 function About() {

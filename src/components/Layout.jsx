@@ -9,7 +9,8 @@ import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import CakeIcon from '@mui/icons-material/Cake';
 
-// Styles
+const BASE_URL = '/portfolio/';
+
 const containerStyle = {
     position: "relative",
     padding: { lg: "48px", md: "32px", sm: "16px", xs: "16px" },
@@ -136,9 +137,9 @@ const Layout = ({ children }) => {
                     </Box>
 
                     <Box sx={{ width: "100%", margin: "0px auto", marginTop: "20px", textAlign: "center" }}>
-                        <Button variant="outlined" className="font-size-md lato-regular" sx={{ color: "black", border: "1px solid black", borderRadius: "0", textTransform: "capitalize" }}>
+                        <Link href={`${BASE_URL}resume.pdf`} rel="noopener noreferrer" className="font-size-md lato-regular" sx={{textDecoration: "none",cursor: "pointer", padding: "7px 15px", color: "black", border: "1px solid black", borderRadius: "0", textTransform: "capitalize", '&:hover' : { backgroundColor: "black", color: "white" } }}>
                             Download CV
-                        </Button>
+                        </Link>
                     </Box>
 
                 </Box>

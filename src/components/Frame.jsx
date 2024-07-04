@@ -1,10 +1,7 @@
 import React from 'react';
 import { Box, Link } from '@mui/material';
 
-import PersonIcon from '@mui/icons-material/Person';
-import ArticleIcon from '@mui/icons-material/Article';
-import WorkIcon from '@mui/icons-material/Work';
-import BookIcon from '@mui/icons-material/Book';
+const BASE_URL = '/portfolio/';
 
 const frameStyles = {
   frameContainer: {
@@ -149,7 +146,7 @@ function Frame() {
       <Box sx={{ ...frameStyles.verticalLinkContainer, ...frameStyles.rightVerticalLinkContainer }}>
         <Link className="lato-light font-size-md" href="#work" underline="none" sx={frameStyles.link}> &#124; Experience &#124; </Link>
         <Link className="lato-light font-size-md" href="#blog" underline="none" sx={frameStyles.link}> &#124; Blogs &#124; </Link>
-        <Link className="lato-light font-size-md" underline="none" sx={frameStyles.link}> &#124; Download CV &#124; </Link>
+        <Link className="lato-light font-size-md" href={`${BASE_URL}resume.pdf`} rel="noopener noreferrer" sx={frameStyles.link}> &#124; Download CV &#124; </Link>
       </Box>
     </Box>
   );
