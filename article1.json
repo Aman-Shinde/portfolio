@@ -1,0 +1,104 @@
+[
+    {
+        "title": "The Future of Technology",
+        "subtitle": "Exploring the advancements in AI and Machine Learning",
+        "byline": "By John Doe",
+        "publishedDate": "July 4, 2024",
+        "codeblocks": [
+            [
+                {
+                    "type": "title",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                },
+                {
+                    "type": "description",
+                    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorem dolores maiores? Id facilis mollitia natus voluptas excepturi veniam laboriosam."
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "content": "The Future of Technology"
+                },
+                {
+                    "type": "description",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi accusantium tempora vitae! Tenetur natus obcaecati quisquam tempore non voluptate veniam praesentium cumque, placeat nostrum qui ea quo. Soluta, vero quibusdam aperiam dolorem delectus est. Doloribus corrupti fugit reiciendis, quis quibusdam quam, perspiciatis mollitia dignissimos cupiditate sequi magnam eveniet, sed distinctio."
+                },
+                {
+                    "type": "description",
+                    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorem dolores maiores? Id facilis mollitia natus voluptas excepturi veniam laboriosam."
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "content": "The Future of Technology"
+                },
+                {
+                    "type": "description",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi accusantium tempora vitae! Tenetur natus obcaecati quisquam tempore non voluptate veniam praesentium cumque, placeat nostrum qui ea quo. Soluta, vero quibusdam aperiam dolorem delectus est. Doloribus corrupti fugit reiciendis, quis quibusdam quam, perspiciatis mollitia dignissimos cupiditate sequi magnam eveniet, sed distinctio."
+                },
+                {
+                    "type": "list",
+                    "content": [ 
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorem dolores maiores? Id facilis mollitia natus voluptas excepturi veniam laboriosam.",
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorem dolores maiores? Id facilis mollitia natus voluptas excepturi veniam laboriosam.",
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorem dolores maiores? Id facilis mollitia natus voluptas excepturi veniam laboriosam."
+                    ]
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "content": "The Future of Technology"
+                }
+            ],
+            [
+                {
+                    "type": "list",
+                    "content": [ 
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorem dolores maiores? Id facilis mollitia natus voluptas excepturi veniam laboriosam.",
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorem dolores maiores? Id facilis mollitia natus voluptas excepturi veniam laboriosam.",
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorem dolores maiores? Id facilis mollitia natus voluptas excepturi veniam laboriosam."
+                    ]
+                }
+            ],
+            [
+                {
+                    "type": "description",
+                    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorem dolores maiores? Id facilis mollitia natus voluptas excepturi veniam laboriosam."
+                }
+            ],
+            [
+                {
+                    "type": "code",
+                    "content": "const myFunction = () => {\n  console.log('Hello, World!');\n};"
+                }
+            ],
+            [
+                {
+                    "type" : "title",
+                    "content" : "Important Links"
+                },
+                {
+                    "type": "links",
+                    "content" : [
+                        {
+                            "title" : "Lorem ipsum dolor sit amet.",
+                            "link" : "https://www.example.com"
+                        },
+                        {
+                            "title" : "Lorem ipsum dolor sit amet.",
+                            "link" : "https://www.example.com"
+                        },
+                        {
+                            "title" : "Lorem ipsum dolor sit amet.",
+                            "link" : "https://www.example.com"
+                        }
+                    ]
+                }
+
+            ]
+        ]
+    }
+]
