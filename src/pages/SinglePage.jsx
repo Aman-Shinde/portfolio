@@ -8,7 +8,7 @@ import ArticleBlock from "../components/articleComponents/ArticleBlock";
 import ArticleCodeBlock from "../components/articleComponents/ArticleCodeBlock";
 import ArticleLinks from "../components/articleComponents/ArticleLinks";
 
-import articleData from '../../public/article1.json';
+import articleData from '../../public/article-03.json';
 
 
 function SinglePage() {
