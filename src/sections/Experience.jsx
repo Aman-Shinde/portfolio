@@ -5,20 +5,20 @@ import AlternateTimeline from '../components/AlternateTimeline';
 import ProjectCard from '../components/ProjectCard';
 
 const companyLogos = [
-    "./tcs_logo.png",
-    "./condenast_logo.png",
-    "./vogue_logo.png",
-    "./ad_logo.png",
-    "./gq_logo.png",
-    "./cnt_logo.svg",
-    "./monkiosque_logo.png",
-    "./tcs_logo.png",
-    "./condenast_logo.png",
-    "./vogue_logo.png",
-    "./ad_logo.png",
-    "./gq_logo.png",
-    "./cnt_logo.svg",
-    "./monkiosque_logo.png"
+    "/portfolio/tcs_logo.png",
+    "/portfolio/condenast_logo.png",
+    "/portfolio/vogue_logo.png",
+    "/portfolio/ad_logo.png",
+    "/portfolio/gq_logo.png",
+    "/portfolio/cnt_logo.svg",
+    "/portfolio/monkiosque_logo.png",
+    "/portfolio/tcs_logo.png",
+    "/portfolio/condenast_logo.png",
+    "/portfolio/vogue_logo.png",
+    "/portfolio/ad_logo.png",
+    "/portfolio/gq_logo.png",
+    "/portfolio/cnt_logo.svg",
+    "/portfolio/monkiosque_logo.png"
 ];
 
 function Experiance() {

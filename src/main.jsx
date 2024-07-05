@@ -6,10 +6,10 @@ import SinglePage from './pages/SinglePage';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
-    {/* <>
-      <Frame/>
+    {/* <App /> */}
+    <>
+      <Frame pageType="blogPage"/>
       <SinglePage/>
-    </> */}
+    </>
   </React.StrictMode>,
 );

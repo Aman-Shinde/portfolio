@@ -6,9 +6,19 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aman Shinde's Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <style>
@@ -22,7 +32,14 @@
     scroll-behavior: smooth;
   }
 
-  body::-webkit-scrollbar {
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
     display: none;
   }
 
@@ -125,34 +142,22 @@
     font-style: normal !important;
   }
 
-  .lato-thin-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 100;
-    font-style: italic;
+  .source-code-pro-regular {
+    font-family: "Source Code Pro", monospace !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
   }
 
-  .lato-light-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-
-  .lato-regular-italic {
-    font-family: "Lato", sans-serif;
+  .noticia-text-regular {
+    font-family: "Noticia Text", serif;
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
   }
 
-  .lato-bold-italic {
-    font-family: "Lato", sans-serif;
+  .noticia-text-bold {
+    font-family: "Noticia Text", serif;
     font-weight: 700;
-    font-style: italic;
-  }
-
-  .lato-black-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
-    font-style: italic;
+    font-style: normal;
   }
 </style>
 
@@ -194,7 +199,18 @@
   }
 </style>
 
-<body>
+<style>
+  ol {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+  li {
+    list-style-position: outside;
+  }
+</style>
+
+<body class="hide-scrollbar">
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>

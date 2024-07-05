@@ -118,10 +118,25 @@ const frameStyles = {
   }
 };
 
-function Frame() {
+function Frame({pageType}) {
+
+  const desktopDisplayLinks = {
+    display: frameStyles.horizontalLinkContainer.display
+  };
+
+  const mobileDisplayLinks = {
+    display: frameStyles.verticalLinkContainer.display
+  };
+
+  if(pageType == 'blogPage')
+  {
+    desktopDisplayLinks.display = "none !important";
+    mobileDisplayLinks.display = "none !important";
+  }
+
   return (
     <Box sx={frameStyles.frameContainer}>
-      <Box sx={{ ...frameStyles.topBottomBar, ...frameStyles.topBar, ...frameStyles.horizontalLinkContainer }}>
+      <Box sx={{ ...frameStyles.topBottomBar, ...frameStyles.topBar, ...frameStyles.horizontalLinkContainer, ...desktopDisplayLinks }}>
         <Link className="lato-regular font-size-md" href="#about" underline="none" sx={frameStyles.desktopLink}>  About  </Link>
         <Link className="lato-regular font-size-md" href="#resume" underline="none" sx={frameStyles.desktopLink}>  Resume  </Link>
         <Link className="lato-regular font-size-md" href="#work" underline="none" sx={frameStyles.desktopLink}>  Experience  </Link>
@@ -137,13 +152,13 @@ function Frame() {
       <Box sx={{ ...frameStyles.cornerBox, ...frameStyles.bottomLeftBox }}></Box>
       <Box sx={{ ...frameStyles.cornerBox, ...frameStyles.bottomRightBox }}></Box>
 
-      <Box sx={{ ...frameStyles.verticalLinkContainer, ...frameStyles.leftVerticalLinkContainer }}>
+      <Box sx={{ ...frameStyles.verticalLinkContainer, ...frameStyles.leftVerticalLinkContainer, ...mobileDisplayLinks }}>
         <Link className="lato-light font-size-md" href="#home" underline="none" sx={frameStyles.link}> &#124; Home &#124; </Link>
         <Link className="lato-light font-size-md" href="#about" underline="none" sx={frameStyles.link}> &#124; About &#124; </Link>
         <Link className="lato-light font-size-md" href="#resume" underline="none" sx={frameStyles.link}> &#124; Resume &#124; </Link>
       </Box>
 
-      <Box sx={{ ...frameStyles.verticalLinkContainer, ...frameStyles.rightVerticalLinkContainer }}>
+      <Box sx={{ ...frameStyles.verticalLinkContainer, ...frameStyles.rightVerticalLinkContainer, ...mobileDisplayLinks }}>
         <Link className="lato-light font-size-md" href="#work" underline="none" sx={frameStyles.link}> &#124; Experience &#124; </Link>
         <Link className="lato-light font-size-md" href="#blog" underline="none" sx={frameStyles.link}> &#124; Blogs &#124; </Link>
         <Link className="lato-light font-size-md" href={`${BASE_URL}resume.pdf`} rel="noopener noreferrer" sx={frameStyles.link}> &#124; Download CV &#124; </Link>
