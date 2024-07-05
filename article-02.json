@@ -1,0 +1,140 @@
+[
+    {
+        "title": "Flexbox Styling: A Comprehensive Guide to Use Cases and Scenarios",
+        "subtitle": "Exploring the Power and Versatility of Flexbox in Modern Web Design",
+        "byline": "Aman Shinde",
+        "publishedDate": "July 4, 2024",
+        "codeblocks": [
+            [
+                {
+                    "type": "title",
+                    "content": "Understanding Flexbox"
+                },
+                {
+                    "type": "description",
+                    "content": "Flexbox is designed for one-dimensional layout, meaning it handles the layout in a single direction—a row or a column. The primary components of a Flexbox layout are the flex container and flex items. The container is the parent element, and the items are its children. By setting display: flex on the container, you enable Flexbox on its children."
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "content": "Key Properties of Flex Container"
+                },
+                {
+                    "type": "list",
+                    "content": [
+                        "display : Defines a flex container and enables a flex context for all its direct children.",
+                        "flex-direction : Specifies the direction of the flex items.",
+                        "justify-content : Aligns flex items along the main axis.",
+                        "align-items : Aligns flex items along the cross axis."
+                    ]
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "content": "Key Properties of Flex Items"
+                },
+                {
+                    "type": "list",
+                    "content": [
+                        "order : Specifies the order of the flex items.",
+                        "flex-grow : Defines the ability of a flex item to grow relative to the rest.",
+                        "flex-shrink : Defines the ability of a flex item to shrink relative to the rest.",
+                        "flex-basis : Specifies the initial size of the flex item before any growing or shrinking."
+                    ]
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "content": "Use Cases and Scenarios"
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "content": "1. Centering Content"
+                },
+                {
+                    "type": "description",
+                    "content": "One of the most common use cases for Flexbox is centering content both horizontally and vertically. This is a task that previously required multiple lines of CSS, but with Flexbox, it’s straightforward."
+                },
+                {
+                    "type": "code",
+                    "content": ".container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}"
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "content": "2. Responsive Navigation Bar"
+                },
+                {
+                    "type": "description",
+                    "content": "Flexbox is perfect for creating a responsive navigation bar that adjusts seamlessly across different screen sizes."
+                },
+                {
+                    "type": "code",
+                    "content": ".navbar {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}"
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "content": "3. Holy Grail Layout"
+                },
+                {
+                    "type": "description",
+                    "content": "The Holy Grail Layout is a classic web design pattern consisting of a header, footer, and three columns. Flexbox simplifies this layout significantly."
+                },
+                {
+                    "type": "code",
+                    "content": ".container {\n  display: flex;\n  flex-direction: column;\n  height: 100vh;\n}\n\n.header, .footer {\n  height: 50px;\n}\n\n.main {\n  display: flex;\n  flex: 1;\n}\n\n.sidebar, .content, .extra {\n  flex: 1;\n}"
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "content": "4. Equal Height Columns"
+                },
+                {
+                    "type": "description",
+                    "content": "Creating columns of equal height was a challenging task before Flexbox. Now, it’s as simple as defining the flex property."
+                },
+                {
+                    "type": "code",
+                    "content": ".container {\n  display: flex;\n  justify-content: space-between;\n}\n\n.item {\n  flex: 1;\n  margin: 5px;\n}"
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "content": "5. Grid Systems"
+                },
+                {
+                    "type": "description",
+                    "content": "Flexbox can be used to create flexible grid systems, which are essential for responsive design. Unlike traditional grid systems, Flexbox grids can change the layout direction, order, and alignment dynamically."
+                },
+                {
+                    "type": "code",
+                    "content": ".container {\n  display: flex;\n  align-items: stretch;\n}\n\n.item {\n  flex: 1;\n  margin: 5px;\n}"
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "content": "Conclusion"
+                },
+                {
+                    "type": "description",
+                    "content": "Flexbox has revolutionized web layout design by providing a powerful, flexible, and intuitive way to arrange elements. From centering content to creating complex grid systems, Flexbox handles various scenarios with ease. Understanding and leveraging its properties can significantly enhance your ability to create responsive and robust web designs."
+                },
+                {
+                    "type": "description",
+                    "content": "Whether you’re building simple layouts or complex designs, Flexbox offers a robust solution that can adapt to your needs, making it an indispensable tool in modern web development."
+                }
+            ]
+        ]
+    }
+]

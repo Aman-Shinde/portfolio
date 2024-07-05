@@ -1,0 +1,54 @@
+[
+    {
+        "title": "CSS Reset: A Crucial Step in Web Development",
+        "subtitle": "Understanding the Importance and Implementation of Eric Meyer's CSS Reset for Consistent Web Styling",
+        "byline": "Aman Shinde",
+        "publishedDate": "July 4, 2024",
+        "codeblocks": [
+            [
+                {
+                    "type": "title",
+                    "content": "What is a CSS Reset?"
+                },
+                {
+                    "type": "description",
+                    "content": "A CSS reset is a stylesheet that overrides the default styles applied by browsers to HTML elements. The primary goal of a CSS reset is to eliminate the inconsistencies caused by these default styles, providing a clean slate for your custom styles. By applying a CSS reset, you can ensure that all browsers render elements in a consistent manner, making it easier to build a cohesive design."
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "content": "Why Use a CSS Reset?"
+                },
+                {
+                    "type": "list",
+                    "content": [
+                        "Consistency Across Browsers: Different browsers have different default styles for HTML elements. A CSS reset ensures that these elements start with the same baseline styles, reducing cross-browser inconsistencies.",
+                        "Simplified Styling: By resetting the default styles, you have more control over the appearance of your elements. This makes it easier to apply your custom styles without having to account for varying browser defaults.",
+                        "Improved Compatibility: A CSS reset helps create a more predictable environment for your styles, improving the compatibility of your website across different browsers and devices.",
+                        "Clean Slate for Design: Starting with a clean slate allows you to design your website without being influenced by the default styles applied by browsers. This can lead to more creative and intentional design choices."
+                    ]
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "content": "Popular CSS Reset Stylesheets"
+                },
+                {
+                    "type": "description",
+                    "content": "Several CSS reset stylesheets have been developed over the years, each with its own approach to resetting styles."
+                },
+                {
+                    "type": "description",
+                    "content": "Eric Meyer's reset is one of the most widely used CSS resets. It aims to remove all default margins, paddings, and borders, providing a clean starting point for your styles."
+                },
+                {
+                    "type" : "code",
+                    "content" : "/* Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) */\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    font: inherit;\n    vertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n    display: block;\n}\nbody {\n    line-height: 1;\n}\nol, ul {\n    list-style: none;\n}\nblockquote, q {\n    quotes: none;\n}\nblockquote:before, blockquote:after,\nq:before, q:after {\n    content: '';\n    content: none;\n}\ntable {\n    border-collapse: collapse;\n    border-spacing: 0;\n}"
+                }
+            ]
+
+        ]
+    }
+]
