@@ -137,6 +137,7 @@ function Frame({pageType}) {
   return (
     <Box sx={frameStyles.frameContainer}>
       <Box sx={{ ...frameStyles.topBottomBar, ...frameStyles.topBar, ...frameStyles.horizontalLinkContainer, ...desktopDisplayLinks }}>
+      <Link className="lato-regular font-size-md" href="#home" underline="none" sx={frameStyles.desktopLink}>  Home  </Link>
         <Link className="lato-regular font-size-md" href="#about" underline="none" sx={frameStyles.desktopLink}>  About  </Link>
         <Link className="lato-regular font-size-md" href="#resume" underline="none" sx={frameStyles.desktopLink}>  Resume  </Link>
         <Link className="lato-regular font-size-md" href="#work" underline="none" sx={frameStyles.desktopLink}>  Experience  </Link>

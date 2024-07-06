@@ -6,6 +6,7 @@ import Loader from './components/Loader';
 
 import MobileContainer from './MobileContainer';
 
+import NewLayout from "./components/NewLayout";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -22,9 +23,9 @@ function App() {
       ) : (
         <>
           <Frame />
-          <Layout>
+          <NewLayout>
             <MobileContainer />
-          </Layout>
+          </NewLayout>
         </>
       )
       }
