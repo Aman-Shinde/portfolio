@@ -73,7 +73,6 @@ const BlogCard = ({ date, title, link }) => {
           variant="outlined" 
           className="font-size-sm font-size-sm-res lato-regular"
           href={link} 
-          target="_blank"
           sx={buttonStyle}
           endIcon={<OpenInNewIcon sx={iconStyle} />}
         >

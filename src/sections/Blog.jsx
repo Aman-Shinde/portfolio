@@ -18,34 +18,34 @@ const titleStyle = {
 const Blog = () => {
   const articles = [
     {
-      date: 'June 15, 2024',
-      title: 'Understanding React Components',
-      link: 'https://example.com/article1'
+      date: 'July 4, 2024',
+      title: 'CSS Reset: A Crucial Step in Web Development',
+      link: '#/page/1'
     },
     {
-      date: 'May 22, 2024',
-      title: 'A Guide to JavaScript ES6 Features',
-      link: 'https://example.com/article2'
+      date: 'July 4, 2024',
+      title: 'Flexbox Styling: A Comprehensive Guide to Use Cases and Scenarios',
+      link: '#/page/2'
     },
     {
-      date: 'June 15, 2024',
-      title: 'Understanding React Components',
-      link: 'https://example.com/article1'
+      date: 'July 4, 2024',
+      title: 'Best Practices in JavaScript Programming',
+      link: '#/page/3'
     },
     {
-      date: 'May 22, 2024',
-      title: 'A Guide to JavaScript ES6 Features',
-      link: 'https://example.com/article2'
+      date: 'July 4, 2024',
+      title: 'CSS Reset: A Crucial Step in Web Development',
+      link: '#/page/1'
     },
     {
-      date: 'June 15, 2024',
-      title: 'Understanding React Components',
-      link: 'https://example.com/article1'
+      date: 'July 4, 2024',
+      title: 'Flexbox Styling: A Comprehensive Guide to Use Cases and Scenarios',
+      link: '#/page/2'
     },
     {
-      date: 'May 22, 2024',
-      title: 'A Guide to JavaScript ES6 Features',
-      link: 'https://example.com/article2'
+      date: 'July 4, 2024',
+      title: 'Best Practices in JavaScript Programming',
+      link: '#/page/3'
     }
   ];
 

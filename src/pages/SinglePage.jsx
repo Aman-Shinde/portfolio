@@ -36,13 +36,19 @@ function SinglePage() {
         };
 
         fetchData();
+        setTimeout(() => {
+            const mainContainer = document.querySelector('.main-inner-container');
+            if (mainContainer) {
+                mainContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }, 500)
     }, [id]);
 
     if (error) {
 
         setTimeout(() => {
             setWait(false);
-        },2000)
+        }, 2000)
         return (
             <>
                 {
@@ -58,38 +64,43 @@ function SinglePage() {
 
     return (
 
-        <Box>
+        <Box className="main-inner-container">
 
-            {jsonData.map((article, index) => (
-                <div key={index}>
-                    <ArticleDetails
-                        title={article.title}
-                        subtitle={article.subtitle}
-                        byline={article.byline}
-                        publishedDate={article.publishedDate}
-                    />
-                    {article.codeblocks.map((block, blockIndex) => (
-                        <ArticleBlock key={blockIndex}>
-                            {block.map((item, itemIndex) => {
-                                switch (item.type) {
-                                    case 'title':
-                                        return <ArticleTitle key={itemIndex} title={item.content} />;
-                                    case 'description':
-                                        return <ArticleParagraph key={itemIndex} description={item.content} />;
-                                    case 'list':
-                                        return <ArticleList key={itemIndex} listItems={item.content} />;
-                                    case 'code':
-                                        return <ArticleCodeBlock key={itemIndex} code={item.content} />;
-                                    case 'links':
-                                        return <ArticleLinks key={itemIndex} links={item.content} />;
-                                    default:
-                                        return null;
-                                }
-                            })}
-                        </ArticleBlock>
-                    ))}
-                </div>
-            ))}
+            {
+
+                jsonData.map((article, index) => (
+                    <div key={index}>
+                        <ArticleDetails
+                            title={article.title}
+                            subtitle={article.subtitle}
+                            byline={article.byline}
+                            publishedDate={article.publishedDate}
+                        />
+                        {article.codeblocks.map((block, blockIndex) => (
+                            <ArticleBlock key={blockIndex}>
+                                {block.map((item, itemIndex) => {
+                                    switch (item.type) {
+                                        case 'title':
+                                            return <ArticleTitle key={itemIndex} title={item.content} />;
+                                        case 'description':
+                                            return <ArticleParagraph key={itemIndex} description={item.content} />;
+                                        case 'list':
+                                            return <ArticleList key={itemIndex} listItems={item.content} />;
+                                        case 'code':
+                                            return <ArticleCodeBlock key={itemIndex} code={item.content} />;
+                                        case 'links':
+                                            return <ArticleLinks key={itemIndex} links={item.content} />;
+                                        default:
+                                            return null;
+                                    }
+                                })}
+                            </ArticleBlock>
+                        ))}
+                    </div>
+                ))
+
+
+            }
 
         </Box>
 

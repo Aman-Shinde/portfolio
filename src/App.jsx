@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-import Layout from "./components/Layout";
-import Loader from './components/Loader';
-
 import MobileContainer from './MobileContainer';
 
 import NewLayout from "./components/NewLayout";
@@ -25,8 +22,9 @@ function App() {
         <>
           <NewLayout>
             <Routes>
-              <Route path="/" element={<MobileContainer />} />
-              <Route path="/page/:id" element={<SinglePage />} />
+              <Route path="/" element={<MobileContainer/>} />
+              <Route path="/page/:id" element={<SinglePage/>} />
+              <Route path="*" element={<MobileContainer/>} />
             </Routes>
           </NewLayout>
         </>
