@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
-import Frame from "./components/Frame";
 import Layout from "./components/Layout";
 import Loader from './components/Loader';
 
 import MobileContainer from './MobileContainer';
 
 import NewLayout from "./components/NewLayout";
+
+import SinglePage from './pages/SinglePage';
+
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -18,17 +21,16 @@ function App() {
   }, []);
   return (
     <>
-      {loading ? (
-        <Loader />
-      ) : (
+
         <>
-          <Frame />
           <NewLayout>
-            <MobileContainer />
+            <Routes>
+              <Route path="/" element={<MobileContainer />} />
+              <Route path="/page/:id" element={<SinglePage />} />
+            </Routes>
           </NewLayout>
         </>
-      )
-      }
+
     </>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/material';
+import Frame from "./Frame";
 
 function NewLayout({ children }) {
 
@@ -21,19 +22,22 @@ function NewLayout({ children }) {
 
 
     return (
-        <Box sx={containerWrapperStyle}>
+        <>
+            <Frame />
+            <Box sx={containerWrapperStyle}>
 
-            <Box sx={containerStyle}>
+                <Box sx={containerStyle}>
 
-                <Box className="main-container" sx={{ height: "100%", width: { lg: "680px", md: "400px", sm: "100%", xs: "100%" }, overflowY: "scroll", margin: "0px auto", scrollBehavior: "smooth" }}>
-                    
-                    {children}
+                    <Box className="main-container" sx={{ height: "100%", width: { lg: "680px", md: "400px", sm: "100%", xs: "100%" }, overflowY: "scroll", margin: "0px auto", scrollBehavior: "smooth" }}>
+
+                        {children}
+
+                    </Box>
 
                 </Box>
 
             </Box>
-
-        </Box>
+        </>
     )
 }
 
