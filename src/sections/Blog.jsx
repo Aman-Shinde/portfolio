@@ -33,19 +33,9 @@ const Blog = () => {
       link: '#/page/3'
     },
     {
-      date: 'July 4, 2024',
-      title: 'CSS Reset: A Crucial Step in Web Development',
-      link: '#/page/1'
-    },
-    {
-      date: 'July 4, 2024',
-      title: 'Flexbox Styling: A Comprehensive Guide to Use Cases and Scenarios',
-      link: '#/page/2'
-    },
-    {
-      date: 'July 4, 2024',
-      title: 'Best Practices in JavaScript Programming',
-      link: '#/page/3'
+      date: 'July 8, 2024',
+      title: 'Optimizing React Performance',
+      link: '#/page/4'
     }
   ];
 

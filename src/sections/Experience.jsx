@@ -24,31 +24,48 @@ const companyLogos = [
 function Experiance() {
     const projects = [
         {
-            title: 'Project One',
-            description: 'Description of project one.',
+            title: 'Voice Controlled Home Automation',
+            description: 'A smart home automation system that allows users to control various devices using voice commands. This project integrates with popular voice assistants for seamless interaction.',
             imageUrl: 'https://via.placeholder.com/150',
-            link: '#'
+            link: 'https://github.com/Aman-Shinde/Voice-controlled-home-automation'
         },
         {
-            title: 'Project Two',
-            description: 'Description of project two.',
+            title: 'User Navigation and Tracking',
+            description: 'An application that provides real-time user navigation and tracking capabilities. It is designed to help track user movements and provide location-based services.',
             imageUrl: 'https://via.placeholder.com/150',
-            link: '#'
+            link: 'https://github.com/Aman-Shinde/User-Navigation-and-Tracking'
         },
         {
-            title: 'Project One',
-            description: 'Description of project one.',
+            title: 'WorkForceApp',
+            description: 'Built cross-platform application (Website, Android, iOS app) to support Municipal Corporations or any organizations from the moment a patient is identified as COVID-19 positive till he/she is released.',
             imageUrl: 'https://via.placeholder.com/150',
-            link: '#'
+            link: 'https://github.com/jaiswalakshansh/WorkForceApp'
         },
         {
-            title: 'Project Two',
-            description: 'Description of project two.',
+            title: 'Notes Chrome Extension',
+            description: 'A Chrome extension that allows users to take and manage notes directly in their browser. It features an intuitive interface and various customization options.',
             imageUrl: 'https://via.placeholder.com/150',
-            link: '#'
+            link: 'https://github.com/Aman-Shinde/Notes-chrome-extension'
         },
-        // Add more projects here
-    ];
+        {
+            title: 'Markdown Viewer',
+            description: 'A web application for viewing and rendering Markdown files. It supports various Markdown syntaxes and provides a user-friendly interface for easy reading.',
+            imageUrl: 'https://via.placeholder.com/150',
+            link: 'https://github.com/Aman-Shinde/markdown-viewer'
+        },
+        {
+            title: 'Brothers Automotive Garage Website',
+            description: 'A website for a garage business, featuring details about services, location, and contact information. The site is designed to be user-friendly and mobile responsive.',
+            imageUrl: 'https://via.placeholder.com/150',
+            link: 'https://github.com/Aman-Shinde/brothers-garage'
+        },
+        {
+            title: 'My Portfolio',
+            description: 'A personal portfolio website showcasing various projects and skills. It includes sections for work experience, education, and contact information.',
+            imageUrl: 'https://via.placeholder.com/150',
+            link: 'https://github.com/Aman-Shinde/portfolio'
+        }
+    ];    
 
     const sectionBorderStyle = {
         borderTop: "1px solid black",
@@ -136,7 +153,7 @@ function Experiance() {
 
                 <Box sx={{ mt: "12px" }}>
                     <Grid container spacing={2}>
-                        {projects.map((project, index) => (
+                        {projects.reverse().map((project, index) => (
                             <Grid item key={index} xs={12} sm={6} lg={6}>
                                 <ProjectCard
                                     title={project.title}
