@@ -18,24 +18,29 @@ const titleStyle = {
 const Blog = () => {
   const articles = [
     {
-      date: 'July 4, 2024',
+      date: 'December 4, 2023',
       title: 'CSS Reset: A Crucial Step in Web Development',
       link: '#/page/1'
     },
     {
-      date: 'July 4, 2024',
+      date: 'January 10, 2024',
       title: 'Flexbox Styling: A Comprehensive Guide to Use Cases and Scenarios',
       link: '#/page/2'
     },
     {
-      date: 'July 4, 2024',
+      date: 'February 12, 2024',
       title: 'Best Practices in JavaScript Programming',
       link: '#/page/3'
     },
     {
-      date: 'July 8, 2024',
+      date: 'March 8, 2024',
       title: 'Optimizing React Performance',
       link: '#/page/4'
+    },
+    {
+      date: 'July 9, 2024',
+      title: 'Best Books to Refer for Learning JavaScript',
+      link: '#/page/5'
     }
   ];
 
@@ -50,7 +55,7 @@ const Blog = () => {
           </p>
         </Box>
 
-        {articles.map((article, index) => (
+        {articles.reverse().map((article, index) => (
           <BlogCard
             key={index}
             date={article.date}

@@ -29,7 +29,7 @@ const cardContainerStyle = {
 
 function About() {
   const data = [
-    { description: 'IT Experiance', title: '3+' },
+    { description: 'Years of IT Experiance', title: '3+' },
     { description: 'Open Source Contributions', title: '50+' },
     { description: 'Hackathons Participated', title: '8+' },
     { description: 'Blog Articles Published', title: '4+' }
