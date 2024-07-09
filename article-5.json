@@ -1,0 +1,67 @@
+[
+    {
+        "title": "Best Books to Refer for Learning JavaScript",
+        "subtitle": "A guide to the most recommended JavaScript books for developers",
+        "byline": "Aman Shinde",
+        "publishedDate": "July 9, 2024",
+        "codeblocks": [
+            [
+                {
+                    "type": "title",
+                    "content": "JavaScript: The Good Parts"
+                },
+                {
+                    "type": "description",
+                    "content": "Authored by Douglas Crockford, this book focuses on the core principles of JavaScript. It filters out the bad features of the language and emphasizes the good parts, providing developers with a solid foundation. This is a must-read for anyone looking to master the essentials of JavaScript."
+                },
+                {
+                    "type": "links",
+                    "content": [
+                        {
+                            "title": "Read JavaScript: The Good Parts",
+                            "link": "https://andersonguelphjs.github.io/OReilly_JavaScript_The_Good_Parts_May_2008.pdf"
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "content": "JavaScript: The Definitive Guide"
+                },
+                {
+                    "type": "description",
+                    "content": "Written by David Flanagan, this book is often referred to as the 'Bible of JavaScript.' It covers everything from the basics to advanced topics, making it an invaluable resource for both beginners and experienced developers. The sixth edition includes the latest updates and features of JavaScript."
+                },
+                {
+                    "type": "links",
+                    "content": [
+                        {
+                            "title": "Read JavaScript: The Definitive Guide",
+                            "link": "https://pepa.holla.cz/wp-content/uploads/2016/08/JavaScript-The-Definitive-Guide-6th-Edition.pdf"
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "type": "title",
+                    "content": "Deep JavaScript: Theory and Techniques"
+                },
+                {
+                    "type": "description",
+                    "content": "This book delves into the deeper aspects of JavaScript, exploring advanced theories and techniques. It's ideal for developers who want to go beyond the basics and understand the intricacies of the language. The book covers topics like closures, prototypes, and asynchronous programming in detail."
+                },
+                {
+                    "type": "links",
+                    "content": [
+                        {
+                            "title": "Read Deep JavaScript: Theory and Techniques",
+                            "link": "https://github.com/quyenly13/books/blob/master/Javascript/Deep%20JavaScript%20Theory%20and%20techniques.pdf"
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+]
