@@ -7,7 +7,7 @@ const cardStyle = {
   border: '1px solid black',
   borderRadius: '0',
   boxShadow: 'none',
-  backgroundColor: 'white',
+  backgroundColor: 'transparent',
   padding: '8px 12px',
   display: 'flex',
   flexDirection: 'column',

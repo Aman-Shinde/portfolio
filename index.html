@@ -74,6 +74,9 @@
 
   body {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    /* background-image: radial-gradient(rgb(0, 0, 0) 20%, transparent 20%), radial-gradient(rgb(0, 0, 0) 20%, transparent 20%);
+    background-size: 5px 5px;
+    background-position: 0px 0px, 5px 5px; */
   }
 
   .font-size-xs {
@@ -268,6 +271,57 @@
   li {
     list-style-position: outside;
   }
+</style>
+
+<style>
+  .word-rotate {
+  position: relative; /* Adjust as needed */
+  height: 24px;  /* Adjust as needed */
+  font-size: 2em; /* Adjust as needed */
+  color: #333;
+}
+
+.word-rotate .word {
+  position: absolute;
+  opacity: 0;
+  transform: rotateX(90deg);
+  animation: rotateWords 8s linear infinite 0s;
+}
+
+.word-rotate .word:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.word-rotate .word:nth-child(3) {
+  animation-delay: 4s;
+}
+
+.word-rotate .word:nth-child(4) {
+  animation-delay: 6s;
+}
+
+@keyframes rotateWords {
+  0% {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  5% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+  25% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+  30% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  100% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+}
 </style>
 
 <body class="hide-scrollbar">

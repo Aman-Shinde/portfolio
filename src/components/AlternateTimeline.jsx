@@ -58,7 +58,6 @@ const TimelineSeparator = styled(Box)(({ theme }) => ({
 
 const TimelineContent = styled(Box)(({ theme }) => ({
     padding: '12px 16px',
-    backgroundColor: 'white',
     position: 'relative',
     border: '1px solid black',
 }));

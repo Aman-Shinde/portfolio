@@ -7,6 +7,7 @@ const cardStyle = {
   display: 'flex',
   alignItems: 'center',
   borderRadius: "0",
+  backgroundColor: "transparent",
   boxShadow: "none",
   marginBottom: {lg: "0px", md: "0px", sm: "12px", xs: "8px"}
 };

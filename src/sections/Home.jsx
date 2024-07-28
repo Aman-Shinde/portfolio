@@ -59,7 +59,13 @@ function Home() {
 
                 <p className="font-size-lg lato-bold" style={nameStyle}> <b> Aman Shinde </b> </p>
 
-                <p className="font-size-md lato-regular" style={{ margin: "0px auto", marginBottom: "16px", marginTop: "8px" }}> Web Engineer </p>
+                {/* <p className="font-size-md lato-regular" style={{ margin: "0px auto", marginBottom: "16px", marginTop: "8px" }}> Web Engineer </p> */}
+                <Stack style={{ margin: "0px auto", marginBottom: "16px", marginTop: "8px", justifyContent: "center", alignItems: "center" }} className="word-rotate font-size-md lato-regular">
+                    <span className="word">Web Engineer</span>
+                    <span className="word">MERN Stack Developer</span>
+                    <span className="word">System Engineer</span>
+                    <span className="word">Frontend Developer</span>
+                </Stack>
 
                 <Stack direction="row" justifyContent="space-between" sx={{ width: "90%", margin: "0px auto" }}>
 
