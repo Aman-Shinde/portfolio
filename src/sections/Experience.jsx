@@ -64,6 +64,12 @@ function Experiance() {
             description: 'A personal portfolio website showcasing various projects and skills. It includes sections for work experience, education, and contact information.',
             imageUrl: 'https://via.placeholder.com/150',
             link: 'https://github.com/Aman-Shinde/portfolio'
+        },
+        {
+            title: 'Grid Planner',
+            description: 'Grid Planner is a web application that enables users to design and visualize grid layouts. You can define grid configurations such as columns, rows, gaps, and containers, and generate the corresponding HTML and CSS code.',
+            imageUrl: 'https://via.placeholder.com/150',
+            link: 'https://github.com/Aman-Shinde/grid-planner'
         }
     ];    
 

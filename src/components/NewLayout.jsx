@@ -20,7 +20,6 @@ function NewLayout({ children }) {
         justifyContent: "space-between"
     };
 
-
     return (
         <>
             <Frame />
