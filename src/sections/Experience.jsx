@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Stack, Grid } from '@mui/material';
 
 import AlternateTimeline from '../components/AlternateTimeline';
-import ProjectCard from '../components/ProjectCard';
+import NewProjectCard from '../components/NewProjectCard';
 
 const companyLogos = [
     "/portfolio/tcs_logo.png",
@@ -21,57 +21,82 @@ const companyLogos = [
     "/portfolio/monkiosque_logo.png"
 ];
 
+
+
 function Experiance() {
-    const projects = [
+    
+    const projectsNew = [
         {
-            title: 'Voice Controlled Home Automation',
+            title: 'Home Automation',
             description: 'A smart home automation system that allows users to control various devices using voice commands. This project integrates with popular voice assistants for seamless interaction.',
-            imageUrl: 'https://via.placeholder.com/150',
-            link: 'https://github.com/Aman-Shinde/Voice-controlled-home-automation'
+            links: {
+                github: 'https://github.com/Aman-Shinde/Voice-controlled-home-automation'
+            }
         },
         {
-            title: 'User Navigation and Tracking',
+            title: 'Navigation and Tracking',
             description: 'An application that provides real-time user navigation and tracking capabilities. It is designed to help track user movements and provide location-based services.',
-            imageUrl: 'https://via.placeholder.com/150',
-            link: 'https://github.com/Aman-Shinde/User-Navigation-and-Tracking'
+            links: {
+                github: 'https://github.com/Aman-Shinde/User-Navigation-and-Tracking'
+            },
+            techUsed: ['HTML', 'CSS', 'Php', 'GoogleMaps']
         },
         {
             title: 'WorkForceApp',
             description: 'Built cross-platform application (Website, Android, iOS app) to support Municipal Corporations or any organizations from the moment a patient is identified as COVID-19 positive till he/she is released.',
-            imageUrl: 'https://via.placeholder.com/150',
-            link: 'https://github.com/jaiswalakshansh/WorkForceApp'
+            links: {
+                github: 'https://github.com/jaiswalakshansh/WorkForceApp',
+                live: 'http://workforcecovid.herokuapp.com/',
+                more : 'https://www.hackerearth.com/challenges/hackathon/hackerearth-hackcovid-2/dashboard/848c8f5/submission/published/workforce-for-covid-19/'
+            },
+            techUsed: ['Php', 'GoogleMaps', 'Javascript', 'Jquery']
         },
         {
-            title: 'Notes Chrome Extension',
+            title: 'Notes Extension',
             description: 'A Chrome extension that allows users to take and manage notes directly in their browser. It features an intuitive interface and various customization options.',
-            imageUrl: 'https://via.placeholder.com/150',
-            link: 'https://github.com/Aman-Shinde/Notes-chrome-extension'
+            links: {
+                github: 'https://github.com/Aman-Shinde/Notes-chrome-extension',
+            },
+            techUsed: ['HTML', 'CSS', 'Javascript']
         },
         {
             title: 'Markdown Viewer',
             description: 'A web application for viewing and rendering Markdown files. It supports various Markdown syntaxes and provides a user-friendly interface for easy reading.',
-            imageUrl: 'https://via.placeholder.com/150',
-            link: 'https://github.com/Aman-Shinde/markdown-viewer'
+            links: {
+                github: 'https://github.com/Aman-Shinde/markdown-viewer',
+                live: 'https://aman-shinde.github.io/markdown-viewer/'
+            },
+            techUsed: ['Reactjs', 'Javascript', 'CSS']
         },
         {
-            title: 'Brothers Automotive Garage Website',
-            description: 'A website for a garage business, featuring details about services, location, and contact information. The site is designed to be user-friendly and mobile responsive.',
-            imageUrl: 'https://via.placeholder.com/150',
-            link: 'https://github.com/Aman-Shinde/brothers-garage'
+            title: 'A Garage Website',
+            description: 'A website for a garage business, featuring details about services, location, and contact information. The site is designed to be user-friendly and responsive.',
+            links: {
+                github: 'https://github.com/Aman-Shinde/brothers-garage',
+                live: 'https://aman-shinde.github.io/brothers-garage/'
+            },
+            techUsed: ['Reactjs', 'Javascript', 'MUI' ]
         },
         {
             title: 'My Portfolio',
             description: 'A personal portfolio website showcasing various projects and skills. It includes sections for work experience, education, and contact information.',
-            imageUrl: 'https://via.placeholder.com/150',
-            link: 'https://github.com/Aman-Shinde/portfolio'
+            links: {
+                github: 'https://github.com/Aman-Shinde/portfolio',
+                live: 'https://github.com/Aman-Shinde/portfolio'
+            },
+            techUsed: ['Reactjs', 'Javascript', 'MUI']
         },
         {
             title: 'Grid Planner',
-            description: 'Grid Planner is a web application that enables users to design and visualize grid layouts. You can define grid configurations such as columns, rows, gaps, and containers, and generate the corresponding HTML and CSS code.',
-            imageUrl: 'https://via.placeholder.com/150',
-            link: 'https://github.com/Aman-Shinde/grid-planner'
+            description: 'A web application that enables users to design and visualize grid layouts also generate the corresponding HTML and CSS code.',
+            links: {
+                github: 'https://github.com/Aman-Shinde/grid-planner',
+                live: 'https://aman-shinde.github.io/grid-planner/'
+            },
+            techUsed: ['Typescript', 'Reactjs', 'Javascript', 'StyledComponents']
         }
-    ];    
+    ];
+    
 
     const sectionBorderStyle = {
         borderTop: "1px solid black",
@@ -159,12 +184,10 @@ function Experiance() {
 
                 <Box sx={{ mt: "12px" }}>
                     <Grid container spacing={2}>
-                        {projects.reverse().map((project, index) => (
+                        {projectsNew.reverse().map((project, index) => (
                             <Grid item key={index} xs={12} sm={6} lg={6}>
-                                <ProjectCard
-                                    title={project.title}
-                                    description={project.description}
-                                    link={project.link}
+                                <NewProjectCard
+                                    project={project}
                                 />
                             </Grid>
                         ))}
