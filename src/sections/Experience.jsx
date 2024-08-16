@@ -43,7 +43,7 @@ function Experiance() {
         },
         {
             title: 'WorkForceApp',
-            description: 'Built cross-platform application (Website, Android, iOS app) to support Municipal Corporations or any organizations from the moment a patient is identified as COVID-19 positive till he/she is released.',
+            description: 'A cross-platform application (Website, Android, iOS app) to support Municipal Corporations or any organizations to track a patient from the moment he/she identified as COVID-19 positive till discharged from hospital.',
             links: {
                 github: 'https://github.com/jaiswalakshansh/WorkForceApp',
                 live: 'http://workforcecovid.herokuapp.com/',
