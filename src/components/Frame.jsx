@@ -24,6 +24,12 @@ const frameStyles = {
   },
   bottomBar: {
     bottom: 0,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: 'center'
+  },
+  bottomBarCopy: {
+    display: { lg: "block", md: "block", sm: "none", xs: "none" }
   },
   topBottomLine: {
     position: "absolute",
@@ -31,7 +37,7 @@ const frameStyles = {
     width: "100%",
     height: "1px",
     backgroundColor: 'black',
-    display: {lg:'block', md: 'block', sm: 'none', xs: 'none'}
+    display: { lg: 'block', md: 'block', sm: 'none', xs: 'none' }
   },
   topLine: {
     top: { lg: "50px", md: "50px", sm: "30px", xs: "30px" }
@@ -111,14 +117,14 @@ const frameStyles = {
     padding: "0px 4px",
     borderLeft: "1px solid black",
     borderRight: "1px solid black",
-    '&:hover' : {
+    '&:hover': {
       color: "white",
       backgroundColor: "black"
     }
   }
 };
 
-function Frame({pageType}) {
+function Frame({ pageType }) {
 
   const desktopDisplayLinks = {
     display: frameStyles.horizontalLinkContainer.display
@@ -128,8 +134,7 @@ function Frame({pageType}) {
     display: frameStyles.verticalLinkContainer.display
   };
 
-  if(pageType == 'blogPage')
-  {
+  if (pageType == 'blogPage') {
     desktopDisplayLinks.display = "none !important";
     mobileDisplayLinks.display = "none !important";
   }
@@ -137,13 +142,15 @@ function Frame({pageType}) {
   return (
     <Box sx={frameStyles.frameContainer}>
       <Box sx={{ ...frameStyles.topBottomBar, ...frameStyles.topBar, ...frameStyles.horizontalLinkContainer, ...desktopDisplayLinks }}>
-      <Link className="lato-regular font-size-md" href="#home" underline="none" sx={frameStyles.desktopLink}>  Home  </Link>
+        <Link className="lato-regular font-size-md" href="#home" underline="none" sx={frameStyles.desktopLink}>  Home  </Link>
         <Link className="lato-regular font-size-md" href="#about" underline="none" sx={frameStyles.desktopLink}>  About  </Link>
         <Link className="lato-regular font-size-md" href="#resume" underline="none" sx={frameStyles.desktopLink}>  Resume  </Link>
         <Link className="lato-regular font-size-md" href="#work" underline="none" sx={frameStyles.desktopLink}>  Experience  </Link>
         <Link className="lato-regular font-size-md" href="#blog" underline="none" sx={frameStyles.desktopLink}>  Blogs  </Link>
       </Box>
-      <Box sx={{ ...frameStyles.topBottomBar, ...frameStyles.bottomBar }}></Box>
+      <Box sx={{ ...frameStyles.topBottomBar, ...frameStyles.bottomBar }}>
+        <Box sx={{ ...frameStyles.bottomBarCopy }} className="font-size-md lato-light">&copy; 2024 &nbsp; Aman Shinde. &nbsp; All rights reserved.</Box>
+      </Box>
       <Box sx={{ ...frameStyles.topBottomLine, ...frameStyles.topLine }}></Box>
       <Box sx={{ ...frameStyles.topBottomLine, ...frameStyles.bottomLine }}></Box>
       <Box sx={{ ...frameStyles.sideLine, ...frameStyles.leftLine }}></Box>

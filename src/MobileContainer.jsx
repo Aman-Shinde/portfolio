@@ -3,6 +3,7 @@ import Resume from "./sections/Resume";
 import Experience from "./sections/Experience";
 import Blog from "./sections/Blog";
 import Home from "./sections/Home";
+import CopyrightNotice from "./components/CopyrightNotice";
 
 
 function MobileContainer() {
@@ -13,6 +14,8 @@ function MobileContainer() {
             <Resume />
             <Experience />
             <Blog />
+            <CopyrightNotice/>
+            
         </>
     )
 }
