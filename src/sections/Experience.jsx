@@ -94,6 +94,15 @@ function Experiance() {
                 live: 'https://aman-shinde.github.io/grid-planner/'
             },
             techUsed: ['Typescript', 'Reactjs', 'Javascript', 'StyledComponents']
+        },
+        {
+            title: 'Content cave',
+            description: 'A platform dedicated to publishing high-quality articles across diverse topics. Designed to inform, inspire, and engage readers with expert-written content.',
+            links: {
+                github: 'https://github.com/Aman-Shinde/content-cave',
+                live: 'https://aman-shinde.github.io/content-cave/'
+            },
+            techUsed: ['Typescript', 'Reactjs', 'Javascript', 'StyledComponents']
         }
     ];
     
