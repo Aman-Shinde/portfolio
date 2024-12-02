@@ -103,6 +103,15 @@ function Experiance() {
                 live: 'https://aman-shinde.github.io/content-cave/'
             },
             techUsed: ['Typescript', 'Reactjs', 'Javascript', 'StyledComponents']
+        },
+        {
+            title: 'Data Analyst Portfolio',
+            description: 'A personal portfolio website showcasing the journey of a data analyst. It features certifications, and key projects offering a comprehensive view of skills and accomplishments in data analysis.',
+            links: {
+                github: 'https://github.com/Aman-Shinde/data-analyst-portfolio',
+                live: 'https://shubhamkoshti71.github.io/portfolio/'
+            },
+            techUsed: ['HTML', 'CSS', 'Javascript']
         }
     ];
     
